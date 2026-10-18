@@ -1,0 +1,9 @@
+{
+  "AI/ML": {
+    "LangChain": [],
+    "MLflow": []
+  },
+  "Cloud/DevOps": {
+    "Azure Container Apps": ["ACA"]
+  }
+}

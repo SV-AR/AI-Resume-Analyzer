@@ -1,0 +1,23 @@
+Machine Learning Engineer (Entry Level)
+
+About us
+We build document intelligence products for small businesses. Our stack includes Kubernetes and Terraform.
+
+Responsibilities
+- Build and maintain NLP pipelines that extract information from documents
+- Develop REST APIs that expose machine learning models
+- Write automated tests and improve model evaluation
+
+Requirements
+- Bachelor's degree in Computer Science or a related field
+- Strong Python programming skills
+- Experience with Machine Learning and Natural Language Processing
+- Knowledge of SQL and PostgreSQL
+- Experience with FastAPI or Flask
+- 0-1 years of experience, internships count
+
+Nice to have
+- Docker
+- Azure or AWS
+- Experience with Hugging Face Transformers
+- Familiarity with Kubernetes

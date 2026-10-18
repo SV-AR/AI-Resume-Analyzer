@@ -1,0 +1,46 @@
+{
+  "_note": "Small, manually labelled, fictional dataset. Labels were written by hand from the text, not by running the system. Extend it with your own examples.",
+  "skill_extraction": [
+    {"text": "Built REST APIs with FastAPI and PostgreSQL. Deployed using Docker.", "skills": ["REST API", "FastAPI", "PostgreSQL", "Docker"]},
+    {"text": "Skills: Python, Java, C++, SQL, Git and GitHub.", "skills": ["Python", "Java", "C++", "SQL", "Git", "GitHub"]},
+    {"text": "Frontend work in React, HTML and CSS styled with Tailwind.", "skills": ["React", "HTML", "CSS", "Tailwind CSS"]},
+    {"text": "Trained ML models with scikit-learn and TensorFlow for NLP tasks.", "skills": ["Machine Learning", "Scikit-learn", "TensorFlow", "Natural Language Processing"]},
+    {"text": "Wrote a JavaScript client using Node.js and Express with MongoDB storage.", "skills": ["JavaScript", "Node.js", "Express", "MongoDB"]},
+    {"text": "Used TF-IDF features and logistic regression to classify support tickets.", "skills": []},
+    {"text": "Managed the rest of the team and helped everyone excel at delivery.", "skills": []},
+    {"text": "Experience with Postgres, Redis caching and Postman for API testing.", "skills": ["PostgreSQL", "Redis", "Postman"]},
+    {"text": "Cloud: AWS and Microsoft Azure; containers on Kubernetes.", "skills": ["AWS", "Azure", "Kubernetes"]},
+    {"text": "Deep learning with PyTorch and Hugging Face Transformers for computer vision.", "skills": ["Deep Learning", "PyTorch", "Hugging Face", "Transformers", "Computer Vision"]},
+    {"text": "Strong communication and teamwork; led a 4 person project team.", "skills": ["Communication", "Teamwork"]},
+    {"text": "I enjoy cooking, football and travelling.", "skills": []}
+  ],
+  "skill_matching": [
+    {"resume_skills": ["Python", "SQL", "FastAPI", "React"], "job_text": "Requirements\n- Python and SQL experience\n- FastAPI knowledge\nNice to have\n- Docker and Azure",
+     "expected_matched": ["Python", "SQL", "FastAPI"], "expected_missing": ["Docker", "Azure"], "expected_additional": ["React"]},
+    {"resume_skills": ["Java", "MySQL"], "job_text": "Requirements\n- Strong Java skills\n- Experience with MySQL and Spring Boot",
+     "expected_matched": ["Java", "MySQL"], "expected_missing": ["Spring Boot"], "expected_additional": []},
+    {"resume_skills": ["Python", "Machine Learning", "Pandas"], "job_text": "Requirements\n- Python, Machine Learning, PyTorch and Docker",
+     "expected_matched": ["Python", "Machine Learning"], "expected_missing": ["PyTorch", "Docker"], "expected_additional": ["Pandas"]},
+    {"resume_skills": ["HTML", "CSS", "JavaScript"], "job_text": "Requirements\n- React, JS and CSS\nNice to have\n- Tailwind",
+     "expected_matched": ["JavaScript", "CSS"], "expected_missing": ["React", "Tailwind CSS"], "expected_additional": ["HTML"]},
+    {"resume_skills": ["Git", "Linux"], "job_text": "Requirements\n- Kubernetes and AWS experience required",
+     "expected_matched": [], "expected_missing": ["Kubernetes", "AWS"], "expected_additional": ["Git", "Linux"]}
+  ],
+  "semantic_matching": {
+    "_note": "relevance: 2 = strong fit, 1 = partial fit, 0 = unrelated. Ranking quality is measured per job.",
+    "jobs": [
+      {"id": "ml_engineer", "text": "Machine Learning Engineer. Requirements: Python, machine learning, NLP, PyTorch, building and deploying ML models as REST APIs. Nice to have: Docker."},
+      {"id": "frontend_dev", "text": "Frontend Developer. Requirements: React, JavaScript, HTML, CSS, responsive design, REST API integration. Nice to have: Tailwind CSS and TypeScript."}
+    ],
+    "resumes": [
+      {"id": "ml_student", "text": "Final-year student. Skills: Python, Machine Learning, NLP, PyTorch, scikit-learn. Projects: trained a text classifier and deployed it with FastAPI as a REST API."},
+      {"id": "web_student", "text": "Final-year student. Skills: React, JavaScript, HTML, CSS, Tailwind CSS. Projects: built a responsive event portal that consumes a REST API."},
+      {"id": "data_analyst", "text": "Analyst. Skills: Python, SQL, Excel, Power BI. Built dashboards and statistical reports for sales teams."},
+      {"id": "chef", "text": "Chef with five years of experience in restaurant kitchens. Managed inventory, menu planning and food safety."}
+    ],
+    "relevance": {
+      "ml_engineer": {"ml_student": 2, "web_student": 0, "data_analyst": 1, "chef": 0},
+      "frontend_dev": {"ml_student": 0, "web_student": 2, "data_analyst": 0, "chef": 0}
+    }
+  }
+}

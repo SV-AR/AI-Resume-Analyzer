@@ -1,0 +1,42 @@
+Priya Raman
+Chennai, Tamil Nadu | priya.raman@example.com | +91 98765 43210
+github.com/priya-raman-demo | linkedin.com/in/priya-raman-demo
+
+SUMMARY
+Final-year Computer Science student focused on NLP and backend engineering. Built REST APIs and machine learning pipelines using Python, FastAPI and spaCy.
+
+EDUCATION
+B.E. in Computer Science and Engineering
+Example Institute of Technology, Chennai
+2022 - 2026 | CGPA: 8.7/10
+
+SKILLS
+Languages: Python, Java, SQL, JS
+Backend: FastAPI, Flask, REST APIs
+AI/ML: Machine Learning, NLP, Scikit-learn, spaCy, Pandas, NumPy
+Database: Postgres, MongoDB
+Tools: Git, GitHub, Postman, Docker
+
+EXPERIENCE
+Software Engineering Intern - Acme Technologies Pvt. Ltd.
+Jun 2025 - Aug 2025
+- Built REST APIs with FastAPI and PostgreSQL that served 5,000 requests per day
+- Reduced average response time by 30% by adding Redis caching
+- Wrote unit tests with Pytest and automated checks using GitHub Actions
+
+PROJECTS
+Smart Notes Classifier | Python, scikit-learn
+- Trained a text classification model on 12,000 labelled notes and reached 91% accuracy
+- Used spaCy for tokenization and lemmatization before TF-IDF features
+
+Campus Event Portal | React, Node.js, MongoDB
+- Developed a full-stack portal used by 400 students to register for events
+- Implemented JWT authentication and role-based access
+
+CERTIFICATIONS
+- Microsoft Azure AI Fundamentals (AI-900) - Microsoft, 2026
+- Python for Everybody - Coursera, 2024
+
+ACHIEVEMENTS
+- Finalist, college hackathon 2025
+- Secured a top 10 rank in an inter-college coding contest

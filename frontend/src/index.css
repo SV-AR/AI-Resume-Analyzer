@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { @apply bg-desk; }
+  body { @apply min-w-[320px] bg-desk text-ink font-sans antialiased; }
+  h1, h2, h3 { @apply font-sans; }
+  ::selection { @apply bg-mark text-ink; }
+  :focus-visible { outline: 2px solid #2563eb; outline-offset: 2px; }
+  table { border-collapse: collapse; }
+}
+
+@layer components {
+  .paper { @apply rounded-xl border border-rule bg-white shadow-[0_2px_8px_rgba(15,23,42,0.04)]; }
+  .btn { @apply inline-flex min-h-10 items-center justify-center gap-2 rounded-lg border px-4 py-2 text-sm font-semibold transition-colors duration-150 disabled:cursor-not-allowed disabled:opacity-50; }
+  .btn-primary { @apply btn border-margin bg-margin text-white hover:border-[#1d4ed8] hover:bg-[#1d4ed8]; }
+  .btn-ghost { @apply btn border-rule bg-white text-ink hover:border-slate2/50 hover:bg-slate-50; }
+  .btn-danger { @apply btn border-transparent bg-transparent px-2 text-redpen hover:bg-red-50; }
+  .input { @apply h-12 w-full rounded-lg border border-rule bg-white px-3 text-sm shadow-none transition placeholder:text-slate2/70 hover:border-slate2/60 focus:border-margin focus:outline-none focus:ring-4 focus:ring-margin/10; }
+  textarea.input { @apply h-auto min-h-56 py-3; }
+  .label { @apply mb-1.5 block text-sm font-semibold text-ink; }
+  .chip-match { @apply rounded-full border border-pass/20 bg-green-50 px-2.5 py-1 text-xs font-medium text-pass; }
+  .chip-miss { @apply rounded-full border border-redpen/15 bg-red-50 px-2.5 py-1 text-xs font-medium text-redpen; }
+  .chip-extra { @apply rounded-full border border-rule bg-slate-50 px-2.5 py-1 text-xs font-medium text-slate2; }
+  .chip-plain { @apply rounded-full border border-rule bg-slate-50 px-2.5 py-1 text-xs font-medium text-slate2; }
+  .data-table { @apply min-w-[720px] w-full text-sm; }
+  .data-table th { @apply border-b border-rule px-4 py-3 text-left text-xs font-semibold uppercase text-slate2; }
+  .data-table td { @apply border-b border-rule px-4 py-3 align-middle; }
+  .data-table tbody tr { @apply transition-colors hover:bg-slate-50; }
+  .data-table tbody tr:last-child td { @apply border-b-0; }
+}
+
+@layer utilities {
+  .page-heading { @apply text-[32px] font-bold leading-tight; }
+  .page-subtitle { @apply mt-2 max-w-2xl text-[15px] leading-6 text-slate2; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
